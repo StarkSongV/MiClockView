@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:custom="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg">
+    android:orientation="vertical">
 
- <com.ownchan.miclock.ClockView
-     android:layout_width="270dip"
-     android:layout_height="270dp"
-     custom:clock_backgroundColor="@color/bg"
-     custom:clock_darkColor="#80ffffff"
-     custom:clock_lightColor="#ffffff"
-     android:layout_centerInParent="true"/>
+ <Button
+     android:id="@+id/btn_1"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="原控件" />
 
-</RelativeLayout>
+ <Button
+     android:id="@+id/btn_2"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="我的控件" />
+</LinearLayout>
